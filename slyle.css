@@ -5,6 +5,7 @@
 }
 body, html {
     background-color: #c95aee;
+    background: linear-gradient(to bottom, #9841b6, #9851af);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -13,6 +14,7 @@ body, html {
 }
 
 .calculator {
+    cursor: default;
     width: 60vh;
     height: 80vh;
     background-color: #3c8bdf61;
@@ -28,28 +30,86 @@ body, html {
     width: 90%;
     height: 15%;
     background-color: #cdedfc3c;
+    font-size: 1.7vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
 }
 .c-button {
+    /* Запрещаем выделение текста (Взято с stackoverflow) */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome, Edge, Opera and Firefox */
+
     width: 90%;
     height: 75%;
     background-color: #4c4c4c4f;
     border-top-left-radius: 2vw;
-    border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-b-num-panel {
+    width: 69%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.c-b-func-panel {
+    width: 29%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-
-
-
-
-
-
+.c-b-num-panel > .b-number {
+    width: 30%;
+    height: 20%;
+    background-color: #9900ff;
+    box-shadow: -0.2vw 0.2vw 0.2vw #53008b;
+    margin: 1%;
+    color: white;
+    font-size: 2vw;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.c-b-func-panel > .b-func {
+    width: 45%;
+    height: 15%;
+    border-radius: 20%;
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9900ff;
+    box-shadow: -0.2vw 0.2vw 0.2vw #53008b;
+    margin: 1%;
+    transition: 0.2s;
+}
+.c-b-func-panel > .b-func:hover {
+    box-shadow: -0.1vw 0.1vw 0.1vw #53008b;
+    transform: translate(-0.1vw, 0.1vw);
+}
+.c-b-num-panel > .b-number:hover {
+    box-shadow: -0.1vw 0.1vw 0.1vw #53008b;
+    transform: translate(-0.1vw, 0.1vw);
+}
 
 
 
