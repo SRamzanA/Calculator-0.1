@@ -35,34 +35,3 @@ function result() {
     displayContent = [res]
     display.textContent = displayContent.join("")
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
